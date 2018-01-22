@@ -19,7 +19,10 @@ public class OneDArray {
 		System.out.println("elements in array = "+arr[i]);
 	}
 		
-		
+	for(int var : arr1)
+	{
+		System.out.println(var);
+	}
 		
 	}
 
