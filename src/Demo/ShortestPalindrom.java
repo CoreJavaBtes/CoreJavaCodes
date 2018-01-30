@@ -1,22 +1,43 @@
 package Demo;
 
+import java.util.Scanner;
+
 public class ShortestPalindrom {
 
 	public static void main(String[] args) {
-		String s = "madam like pop music";
-		
-		String[] s1 = s.split(" ");
-		
-		for(int i=0;i<s1.length;i++)
-		{
-			for(int j = s1[i].length()-1;j>=0;j--)
-				{
-				
-				String s2="";
-				s2 = s2+""+s1[i].charAt(j);
-				System.out.println(s2);
-		
-			}
-		}
+		 Scanner s=new Scanner(System.in);
+	        System.out.print("Enter the string: ");
+	        String s1=s.nextLine();
+	        int count=0;
+	        String[] s2=s1.split(" ");
+	        System.out.println(s2.length);
+	        int i=s2.length;
+	        String s4="";
+	        for(int j=0;j<s2.length;j++)
+	        {
+	            String s3=s2[j];
+	            char[] c=s3.toCharArray();
+	            for(int k=c.length-1;k>=0;k--)
+	            {
+	                s4+=Character.toString(c[k]);
+	            }
+	            if(s4.equals(s3))
+	            {
+	                count++;
+	                if(s4.length()<i)
+	                {
+	                i=j;
+	                }
+	            }
+	            s4="";
+	        }
+	        if(count>0)
+	        {
+	            System.out.println("shortest palindrome is: "+ s2[i]);
+	        }
+	        else
+	        {
+	            System.out.println("no shortest palindrome is there");
+	        }
 	}
 }

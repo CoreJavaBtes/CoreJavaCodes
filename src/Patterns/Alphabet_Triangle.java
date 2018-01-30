@@ -14,16 +14,16 @@ public class Alphabet_Triangle {
 		      for( k= 0 ; k<= i ; k++)
 		        {    
 		            p = 97 + k ;
-		         s = (char)p ;
-		 System.out.print(s);
+		        // s = (char)p ;
+		 System.out.print(p);
 
 
 		 }
 		 for( k=i-1; k>=0 ; k--)
 		        {    
-		            p = 97 + k  ;
-		        //s = (char)p ;
-		 System.out.print((char)p);
+		            p = 1 + k  ;
+		     //   s = (char)p ;
+		 System.out.print(p);
 		 }
 		 System.out.println();
 

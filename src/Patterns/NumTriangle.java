@@ -1,5 +1,7 @@
 package Patterns;
 
+
+
 public class NumTriangle {
 
 	public static void main(String[] args) {
@@ -21,6 +23,8 @@ public class NumTriangle {
 				}	
 			 System.out.println(); 
 		    }
+	
 	}
+	
 
 }

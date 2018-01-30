@@ -13,7 +13,7 @@ public class ProgOperatorSample {
 		
 		// Problem-1
 		
-		int a = 34;
+		/*int a = 34;
         int b = 21;
         int c = a++ + ++b;
         System.out.println("sum1 = " + c);
@@ -25,10 +25,10 @@ public class ProgOperatorSample {
         System.out.println("sum4 = " + f);
         int sum = a + b + c + d + e + f;
         System.out.println("sum = " + sum);
-        
+        */
         // Problem-2
-    /*    
-        int a = 1;
+    
+       /* int a = 1;
         int b = 2;
         int c;
         int d;
@@ -41,16 +41,16 @@ public class ProgOperatorSample {
         System.out.println("a = " + a);
         System.out.print("b = " + b);
         System.out.println("c = " + c++);
-        System.out.print("d = " + d);*/
+        System.out.println("d = " + d);*/
         
      //Problem-3
         
-        /*int i = 4;
+        int i = 4;
         int j = 21;
 
         int k = ++i * 7 + 2 - j--;
 
-        System.out.println("k = " + k);*/
+        System.out.println("k = " + k);
         
        /* //Problem-4
         
