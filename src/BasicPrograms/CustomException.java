@@ -1,3 +1,4 @@
+package BasicPrograms;
 import java.io.IOException;
 
 public class CustomException extends IOException {

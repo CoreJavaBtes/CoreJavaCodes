@@ -9,7 +9,7 @@ public class GetEncap {
 	
 		System.out.println("Name :: "+bean.getName());
 		System.out.println("Id :: "+bean.getId());
-		System.out.println("XYZ :: "+bean.getXyz());
+		
 	}
 	
 

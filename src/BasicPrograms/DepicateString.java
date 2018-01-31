@@ -1,3 +1,4 @@
+package BasicPrograms;
 
 public class DepicateString {
 	

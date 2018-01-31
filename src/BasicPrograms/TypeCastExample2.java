@@ -1,3 +1,4 @@
+package BasicPrograms;
 
 public class TypeCastExample2 {
 	
@@ -43,7 +44,7 @@ public class TypeCastExample2 {
 		
 		//Char to int
 		
-		char c = 'A';
+		char c = 'a';
 		int i = c;
 		System.out.println("Value is : "+i);
 		

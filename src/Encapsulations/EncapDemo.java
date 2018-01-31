@@ -4,26 +4,21 @@ public class EncapDemo {
 
 	public static void main(String[] args) {
 
-		MyBean obj = new MyBean();
-		obj.setXyz(67.09f);
-		obj.setId(101);
-		obj.setName("Sipika");
+		MyBean obj = new MyBean("XYZ",123);
 
-		MyBean obj1 = new MyBean();
+	/*	obj.setId(123);
+		obj.setName("XYZ");*/
 
-		obj1.setId(102);
-		obj1.setName("Saini");
-		obj1.setXyz(43.9f);
+		MyBean obj1 = new MyBean("ABC",456);
 
-		// System.out.println(obj.getName());
-
-		System.out.println(obj1.getName());
-		System.out.println(obj.getId());
-
+		/*obj1.setId(345);
+		obj1.setName("ABC");*/
 		
-		 new GetEncap(obj1); 
-		 new GetEncap(obj);
-		 
+		
+		new GetEncap(obj);
+		new GetEncap(obj1);
+
+
 	}
 
 }
