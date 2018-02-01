@@ -11,15 +11,22 @@ public class DemoScanner {
 		System.out.println("Please Enter any Number :: ");
 		
 		int a = obj.nextInt();
+		
 		System.out.println("Please Enter any String :: ");
-		System.out.println(" int :: "+a);
+		
+		
 		String s = obj.next();
 		System.out.println("Please Enter any Character :: ");
 		System.out.println(" String :: "+s);
+		
 		char c = obj.next().charAt(0);
 		
 		System.out.println(" Character :: "+c);
 		
+	}
+	public static void TestDemo()
+	{
+		System.out.println("I am static from other class");
 	}
 
 }

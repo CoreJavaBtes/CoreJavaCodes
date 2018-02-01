@@ -2,11 +2,14 @@ package OOPs;
 
 import static OOPs.dEMOmETHODS.*;
 import java.util.Scanner;
+
+import BasicPrograms.DemoScanner;
+
 import static java.lang.Math.*;
 public class DemoStatic {
 	
 	int a = 199;
-final static int x;
+	final static int x;
 	static Scanner sn;
 	static{
 		
@@ -21,6 +24,7 @@ final static int x;
 		//x = 100;
 		System.out.println("a = "+a);
 		System.out.println("x = "+x);
+		
 		//DemoStaticImport.test();
 	}
 
@@ -34,9 +38,9 @@ final static int x;
 	{
 		DemoStatic obj = new DemoStatic();
 		obj.show1();
-		double x1 = sqrt(x);
-		//System.out.println("a = "+a);
-		System.out.println("x = "+x1);
+		System.out.println(x);
+		System.out.println("a = "+obj.a);
+		//System.out.println("x = "+x1);
 	}
 	
 	public static void main(String[] args) {
@@ -44,9 +48,9 @@ final static int x;
 		DemoStatic obj = new DemoStatic();
 		display();
 		test();
-		/*obj.show();
-		display();
-		*/
+		obj.show();
+		DemoScanner.TestDemo();
+		
 	}
 
 }

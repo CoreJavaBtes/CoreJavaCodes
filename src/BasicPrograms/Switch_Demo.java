@@ -6,38 +6,43 @@ public class Switch_Demo {
 	public static void main(String[] args) {
 		
 		Scanner sn = new Scanner(System.in);
+		double res = 0;
+		System.out.println("Enter num1");
+		int num1 = sn.nextInt();
 		
-		System.out.println("Enter any day number");
+		System.out.println("Enter num2");
+		int num2 = sn.nextInt();
 		
-		int day = sn.nextInt();
-		switch (day) {
-		case 1:
-			System.out.println("Sunday");
-			break;
-		case 2:
-			System.out.println("Monday");
-			break;
-		case 3:
-			System.out.println("Tuesday");
-			break;
+		System.out.println("Enter + for Addition");
+		System.out.println("Enter - for Subtraction");
+		System.out.println("Enter / for Division");
+		System.out.println("Enter * for Multiplication");
+		
+		char c = sn.next().charAt(0);
+		
+		String symbol = sn.next();
+		switch (symbol) {
+		
+		case "*":
+			 res = num1*num2;
 			
-		case 4:
-			System.out.println("Wednesday");
 			break;
-		case 5:
-			System.out.println("Thrusday");
+		case "+":
+			res = num1+num2;
 			break;
-		case 6:
-			System.out.println("Friday");
-			break;
+		case "-":
+			res = num1-num2;
+		break;	
 			
-		case 7:
-			System.out.println("Saturday");
+		case "/":
+			res = num1/num2;
 			break;
-
 		default:
+			System.out.println("wrong input");
 			break;
-		}
 		
+		
+		}
+		System.out.println("Result = "+res);
 	}
 }
