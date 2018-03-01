@@ -2,14 +2,16 @@ package AbstractionDemo;
 
 abstract public class AbsClass {
 	
-	abstract void area();//Declaration of abstract methods
-	abstract void Vol();
+	abstract void area(int x);//Declaration of abstract methods
+	abstract void Vol(int  x,int y);
 	
-	void start()//concrete methods
+	void start(int x, int y)//concrete methods
 	{
-		area();// Calling of abstract methods
-		Vol();
-		System.out.println("Non-Abstract Method");
+		x = x/2;
+		y = y/2;
+		area(x);// Calling of abstract methods
+		Vol(x,y);
+		System.out.println(".....................");
 	}
 	
 

@@ -20,8 +20,8 @@ public class String_Handling {
 		System.out.println("Index of a :: "+s.indexOf('a'));
 		
 		//System.out.println("Concatination :: "+s3);
-		
-		String s4 = s.substring(3,9);
+		*/
+		/*String s4 = s.substring(3,9);
 		System.out.println("Substring :: "+s4);*/
 		
 		String srr1[] = s4.split(" ");
@@ -33,12 +33,12 @@ public class String_Handling {
 		
 		
 		
-	/*	String[] srr = s3.split(" ");
+		/*String[] srr = s3.split(" ");
 		
 		System.out.println("");
 	
 		for(int i=srr.length-1; i>=0; i--){
-			System.out.print(" "+srr[i]);
+			System.out.println("srr ["+i+"] = "+srr[i]);
 			
 		//System.out.println("Index : "+i+"  Value :: "+srr[i]+" ");
 		}
@@ -49,10 +49,10 @@ public class String_Handling {
 		
 		for(int i=c.length-1; i>=0; i--){
 			System.out.println("Index : "+i+"  Value :: "+c[i]+"");
-			}*/
+			}
 	
 		//StaticDemo.sum();
-	
+*/	
 	}
 
 }

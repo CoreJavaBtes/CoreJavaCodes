@@ -1,27 +1,31 @@
 package AbstractionDemo;
 
 public class DemoAbs2 extends AbsClass{
-double x;
-public DemoAbs2(double x) {
+double x,y;
+
+public DemoAbs2(int x,int y) {
 	// TODO Auto-generated constructor stub
 	this.x = x;
+	this.y = y;
+	start(x,y);
+	
+}
+@Override
+void area(int x) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+void Vol(int x,int y) {
+	// TODO Auto-generated method stub
+	
+	double vol = x*y;
+	System.out.println("Volume is :: "+vol);
+	
 }
 
-	@Override
-	void area() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	void Vol() {
-		// TODO Auto-generated method stub
-		double res = 4/3*x*x*x;
-		System.out.println("Vol of Circle is = "+res);
-	}
 	
-	void hello(){
-		
-	}
+	
+
 
 }

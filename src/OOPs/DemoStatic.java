@@ -9,15 +9,15 @@ import static java.lang.Math.*;
 public class DemoStatic {
 	
 	int a = 199;
-	final static int x;
-	static Scanner sn;
+	  final static double x;
+	 static Scanner sn;
 	static{
 		
 		sn = new Scanner(System.in);
 		System.out.println("Enter Your Constant");
 		x = sn.nextInt();
 		
-		System.out.println("hello static block");
+		System.out.println("Your Contant has been declared");
 	}
 	void show()
 	{	
@@ -49,8 +49,8 @@ public class DemoStatic {
 		display();
 		test();
 		obj.show();
-		DemoScanner.TestDemo();
-		
+		dEMOmETHODS.test();
+	
 	}
 
 }

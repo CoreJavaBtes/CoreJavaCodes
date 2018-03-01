@@ -1,32 +1,28 @@
 package BasicPrograms;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class DemoScanner {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		/*Scanner sn = new Scanner(System.in);
+		System.out.println("Enter a word");
+		String s1 = sn.next();
+		System.out.println("Enter a string");
+		String s2 = sn.nextLine();
+		System.out.println("My Data is :: "+s1);
+		System.out.println("My Data is :: "+s2);
+		*/System.out.println("Enter a string");
+		InputStreamReader in = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(in);
+		
+		String s3 = br.readLine();
+		int i = Integer.parseInt(s3);
+		
+		System.out.println("String is :: "+i);
 
-		Scanner obj = new Scanner(System.in);
-		
-		System.out.println("Please Enter any Number :: ");
-		
-		int a = obj.nextInt();
-		
-		System.out.println("Please Enter any String :: ");
-		
-		
-		String s = obj.next();
-		System.out.println("Please Enter any Character :: ");
-		System.out.println(" String :: "+s);
-		
-		char c = obj.next().charAt(0);
-		
-		System.out.println(" Character :: "+c);
-		
 	}
-	public static void TestDemo()
-	{
-		System.out.println("I am static from other class");
-	}
-
 }

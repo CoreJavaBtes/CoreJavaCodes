@@ -1,4 +1,4 @@
-package BasicPrograms;
+ package BasicPrograms;
 
 public class ScopeOfVariables {
 	

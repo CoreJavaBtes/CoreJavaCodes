@@ -1,34 +1,40 @@
 package Threadss;
 
+
+
 public class ThreadByRunnable implements Runnable {
-	
+	String name;
+	int time;
 	Thread t;
-	String name;int time;
 	public ThreadByRunnable(String name,int time) {
 		// TODO Auto-generated constructor stub
 		t = new Thread(this);
+		t.start();
 		this.name = name;
 		this.time = time;
-		t.start();
-	}
-
+		
+	} 
+	
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		
-		for(int i = 10; i>0; i--)
-		{
-			System.out.println("Thread :: "+name + " : "+i);
+		for(int i = 0; i<5; i++){
+			System.out.println(name+"......."+i);
 			
 			try {
-				Thread.sleep(time
-						);
+				Thread.sleep(time);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-		
 	}
+
+
+		
+	
+	
+	
 
 }

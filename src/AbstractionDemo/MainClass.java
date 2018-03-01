@@ -7,28 +7,12 @@ public class MainClass {
 	
 	
 		AbsClass obj1;
-		 obj1 = new DemoAbs1(6.8);
+		 obj1 = new DemoAbs1(2);
 //		obj1.start();
 		
-		 obj1 = new DemoAbs2(12.0);
-		obj1.start();
+		 obj1 = new DemoAbs2(2,2);
 		
 	
-		AbsClass obj = new AbsClass() {
-			
-			@Override
-			void area() {
-				// TODO Auto-generated method stub
-				
-			}
-			
-			@Override
-			void Vol() {
-				// TODO Auto-generated method stub
-				
-			}
-		};
-		obj.start();
 		
 		
 	}

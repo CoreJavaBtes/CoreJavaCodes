@@ -2,46 +2,38 @@ package OOPs;
 
 public class CustructorDemo {
 
-	double a, b;
-
-	public CustructorDemo() {
-		// this(5.7);
-		System.out.println("I Am Default Constructor");
-	}
-
-	public CustructorDemo(double a) {
-		this();
-		System.out.println("Constructor 1");
-
-		this.a = a;
-
-		System.out.println("Constructor 1 :: " + a);
-	}
-
-	public CustructorDemo(double a, double b) {
-		this(a);
-		System.out.println("Constructor 2");
-		this.a = a;
+	double x, b;
+	
+	public CustructorDemo(int b) {
+		// TODO Auto-generated constructor stub
+		System.out.println("Default Constructor");
 		this.b = b;
+		
+	}
+	
+	public CustructorDemo(int x,int b) {
+		// TODO Auto-generated constructor stub
+		this(b);
+		this.x = x;
+	}
+	
 
+	void show()
+	{
+		System.out.println(x);
+		System.out.println(b);
 	}
 
-	void show() {
-		System.out.println("Value ::" + a);
-		System.out.println("Value ::" + b);
-	}
 
 	public static void main(String[] args) {
 
-		/*
-		 * CustructorDemo obj = new CustructorDemo(); obj.show();
-		 * 
-		 * CustructorDemo obj1 = new CustructorDemo(3.7); obj1.show();
-		 */
+	
+		  
+		  CustructorDemo obj1 = new CustructorDemo(3,8); 
+		  obj1.show();
+		 
 
-		CustructorDemo obj2 = new CustructorDemo(3.7, 65.8);
-		obj2.show();
-
+	
 	}
 
 }

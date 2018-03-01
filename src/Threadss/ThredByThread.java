@@ -4,26 +4,22 @@ public class ThredByThread extends Thread{
 
 	String name;
 	int time;
-	public ThredByThread(String name,int time) {
-		super(name);
+	
+	public ThredByThread() {
 		// TODO Auto-generated constructor stub
-		this.name = name;
-		this.time = time;
 		start();
-		
 	}
+	
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-	
+		super.run();
 		
-		
-		for(int i=10;i<15; i++)
-		{
-			System.out.println(name+"........"+i);
-			//System.out.println(name+"........"+getName());
+		for(int i = 0; i<5; i++){
+			System.out.println("Thread :: "+i);
+			
 			try {
-				sleep(time);
+				sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

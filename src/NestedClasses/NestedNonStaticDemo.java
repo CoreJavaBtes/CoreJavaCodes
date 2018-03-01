@@ -1,3 +1,4 @@
+
 package NestedClasses;
 
 import NestedClasses.DemoStaticNested.InnerDemo;
@@ -34,3 +35,9 @@ public class NestedNonStaticDemo {
 		obj1.innerHello1();
 	}
 }
+
+
+
+
+
+

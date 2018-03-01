@@ -2,35 +2,19 @@ package OOPs;
 
 public class BeanClass {
 	
-	public BeanClass(int id , String name, String color) {
-		
-		this.id = id;
-		this.name = name;
-		this.color = color;
-		
-		// TODO Auto-generated constructor stub
-	}
-
-	
-	
-
-	private int id ;
-	public int getId() {
-		return id;
-	}
-	
+	private String name;
 	public String getName() {
 		return name;
 	}
-		public String getColor() {
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColor() {
 		return color;
 	}
-	
-
-
-
-
-	private String name;
+	public void setColor(String color) {
+		this.color = color;
+	}
 	private String color;
 	
 	

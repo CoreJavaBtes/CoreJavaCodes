@@ -6,34 +6,32 @@ import java.sql.SQLException;
 public class ThrowsExample {
 
 	
-	void m(int no) throws CustomException{
+	void m() throws CustomException{
 		
-	System.out.println("My Exception");
-		if(no<30)
-	{
-		throw new CustomException("InvalidDataException");
-	}else{
-		System.out.println("All Right");
-	}
+	System.out.println("My First Method");
+	throw new CustomException("Anything");
 		
 	}
 	
-	void n() throws CustomException 
+	void n() 
 	{
 		
-			m(10);
+			try {
+				m();
+			} catch (CustomException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		
 	}
 	
-	void g() throws CustomException
+	void g()  
 	{
 	n();
 	}
-	public static void main(String[] args) throws CustomException  
-	{
+	
+	public static void main(String[] args)  {
 		ThrowsExample obj = new ThrowsExample();
-		
-		
 		obj.g();
 	}
 }

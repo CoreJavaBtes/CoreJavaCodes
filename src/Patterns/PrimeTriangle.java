@@ -6,10 +6,10 @@ public class PrimeTriangle {
 		
 		
 		boolean flag1;
-		for(int i=1;i<=10;i++)
+		/*for(int i=1;i<=10;i++)
 		{   int count=0;  
 		   //
-		    for(int k=1;k<=25;k++)
+*/		    for(int k=1;k<=25;k++)
 		    {
 		        flag1=true;
 		        for(int j=2;j<=k/2;j++)
@@ -20,16 +20,16 @@ public class PrimeTriangle {
 		                break;
 		            }
 		        }
-		            if((flag1==true) && (count<i))
+		            if((flag1==true)/* && (count<i)*/)
 		            {
-		                System.out.print(k);
-		                count++;
+		                System.out.println(k);
+		                //count++;
 		            }
 		    }
 		   System.out.println();
 		   
 		   
-		}
+		//}
 
 	}
 

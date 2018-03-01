@@ -2,8 +2,12 @@ package Inheritance;
 
 public  class Demo1 {
 	
-	final int x =100;
-	int y = 200;
+	 int x ;
+	int y ;
+	
+	public Demo1(int x){
+		this.x = x;
+	}
 	
 	public void show2(){
 		

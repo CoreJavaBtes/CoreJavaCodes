@@ -5,6 +5,13 @@ import OOPs.I2;
 
 public class DemoInterface  extends Demo1 implements I1,I2{
 
+	
+
+	public DemoInterface(int x) {
+		super(x);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
